@@ -16,7 +16,7 @@ const mywork_data = [
     {
         w_no: 2,
         w_name: "UI Design System",
-        w_img: project2_img,
+        //w_img: project2_img,
         w_desc: "A comprehensive design system with reusable components, consistent color palettes, and typography guidelines built for modern web applications.",
         w_tech: ["Figma", "CSS3", "HTML5"],
         w_link: "#"
