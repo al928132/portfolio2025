@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import './ProjectDetailPage.css'
 import mywork_data from '../../assets/mywork_data'
+import PythonRunner from '../../Components/PythonRunner/PythonRunner'
 
 const ProjectDetailPage = () => {
     const { id } = useParams();
@@ -54,6 +55,10 @@ const ProjectDetailPage = () => {
                         >
                             View Live Project &rarr;
                         </a>
+                    )}
+
+                    {project.w_code && (
+                        <PythonRunner code={project.w_code} />
                     )}
                 </div>
             </div>

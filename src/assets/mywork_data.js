@@ -4,6 +4,14 @@ import project4_img from '../assets/project_4.svg'
 import magic8ball_img from '../assets/projectImg/magic8ball.png'
 import project6_img from '../assets/project_6.svg'
 
+// ── Python source files (imported as raw text via Vite's ?raw suffix) ────────
+import magic8ball_code from '../assets/projects/magic8ball.py?raw'
+// TO ADD MORE PYTHON FILES:
+//   1. Copy your .py file into:  src/assets/projects/
+//   2. Add an import line here:  import myScript_code from '../assets/projects/myScript.py?raw'
+//   3. Reference it in the array below with:  w_code: myScript_code
+// ─────────────────────────────────────────────────────────────────────────────
+
 // ─────────────────────────────────────────────────────────────────────────────
 // HOW TO ADD A PROJECT
 // ─────────────────────────────────────────────────────────────────────────────
@@ -11,15 +19,26 @@ import project6_img from '../assets/project_6.svg'
 //      import myNewImg from '../assets/my_new_project.png'
 //
 // 2. Add a new object to the array below with these fields:
-//      w_no    – unique integer ID (increment from the last one)
-//      w_name  – display name shown on the card and detail page
-//      w_img   – the imported image variable
-//      w_desc  – paragraph description shown on the detail page
-//      w_tech  – array of technology strings, e.g. ["React", "CSS3"]
-//      w_link  – live project URL, or "#" if not deployed yet
+//      w_no      – unique integer ID (increment from the last one)
+//      w_name    – display name shown on the card and detail page
+//      w_img     – the imported image variable
+//      w_desc    – paragraph description shown on the detail page
+//      w_tech    – array of technology strings, e.g. ["React", "CSS3"]
+//      w_link    – live project URL, or "#" if not deployed yet
 //      w_section – section/category label, e.g. "Web Development"
 //                  Use an existing section to group with related projects,
 //                  or a new string to create a new section automatically.
+//
+// HOW TO ADD A RUNNABLE PYTHON PROJECT
+// ─────────────────────────────────────────────────────────────────────────────
+//   a. Place your .py file in:  src/assets/projects/
+//   b. Import it at the top:    import myScript_code from '../assets/projects/myScript.py?raw'
+//   c. Add to the object below: w_code: myScript_code
+//   d. Set w_tech to include "Python"
+//
+//   The project card will automatically show a live Python runner (powered by
+//   Pyodide / WebAssembly) with syntax-highlighted code, an optional input
+//   field (shown when your script calls input()), and a Run button.
 //
 // 3. Save the file – the portfolio page will pick up the change automatically.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -64,10 +83,11 @@ const mywork_data = [
         w_no: 5,
         w_name: "Magic 8 Ball",
         w_img: magic8ball_img,
-        w_desc: "A Python-based tool that provides random responses to yes/no questions similar to that of a Magic 8 BallS.",
+        w_desc: "A Python-based tool that provides random responses to yes/no questions similar to that of a Magic 8 Ball.",
         w_tech: ["Python"],
         w_link: "#",
-        w_section: "Tools & Scripts"
+        w_section: "Tools & Scripts",
+        w_code: magic8ball_code,
     },
     {
         w_no: 6,

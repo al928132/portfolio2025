@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import './PortfolioPage.css'
 import mywork_data from '../../assets/mywork_data'
+import PythonRunner from '../../Components/PythonRunner/PythonRunner'
 
 /* ── Single project card ─────────────────────────────────── */
 const ProjectCard = ({ project, onOpen }) => {
@@ -114,6 +115,10 @@ const ProjectModal = ({ project, onClose }) => {
                             >
                                 View Live Project &rarr;
                             </a>
+                        )}
+
+                        {project.w_code && (
+                            <PythonRunner code={project.w_code} />
                         )}
                     </div>
                 </div>
