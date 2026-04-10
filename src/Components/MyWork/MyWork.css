@@ -2,101 +2,169 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
+    gap: 70px;
+    padding: 90px 120px;
+    background: #080706;
 }
 
 .mywork-title {
-    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
+.mywork-title::before {
+    content: '— EXHIBITION II —';
+    font-size: 11px;
+    letter-spacing: 0.35em;
+    color: #c4a35a;
+    text-transform: uppercase;
 }
 
 .mywork-title h1 {
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600;
-}
-
-.mywork-title img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1;
 }
 
 .mywork-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 80px;
+    width: 100%;
 }
 
-.mywork-container img {
-    box-sizing: border-box;
-    width: 419px;
-    height: 288px;
-    transition: 0.3s;
+/* Outer frame */
+.mywork-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
     cursor: pointer;
+    transition: transform 0.5s ease;
 }
 
-.mywork-container img:hover {
-    transform: scale(1.10);
-    border: 4px solid #40F2F2;
-    border-radius: 10px;
-    transition: 0.3s;
+.mywork-frame:hover {
+    transform: translateY(-8px);
 }
 
+/* Dark wood frame with gold inner edge */
+.mywork-mat {
+    padding: 12px;
+    background: linear-gradient(145deg, #3b2a10 0%, #1a1008 50%, #3b2a10 100%);
+    box-shadow:
+        0 14px 50px rgba(0, 0, 0, 0.9),
+        0 4px 12px rgba(0, 0, 0, 0.6),
+        inset 0 0 0 1px rgba(196, 163, 90, 0.2),
+        inset 0 0 0 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.mywork-mat::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 2px 2px 6px rgba(255,255,255,0.05), inset -2px -2px 6px rgba(0,0,0,0.4);
+    pointer-events: none;
+}
+
+.mywork-mat img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transition: opacity 0.4s;
+}
+
+.mywork-frame:hover .mywork-mat img {
+    opacity: 0.75;
+}
+
+/* Museum placard */
+.mywork-label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 14px;
+    border-left: 2px solid #c4a35a;
+}
+
+.mywork-label-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: #e5e0d5;
+}
+
+.mywork-label-num {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #5a5650;
+}
+
+/* Show more */
 .mywork-showmore {
     display: flex;
     gap: 15px;
-    border-radius: 50px;
-    border: 2px solid white;
-    padding: 30px 60px;
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 80px;
-    transition: 0.6s;
+    align-items: center;
+    border: 1px solid #2a2720;
+    padding: 16px 52px;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
     cursor: pointer;
+    transition: 0.3s;
+    color: #b8b3a8;
+}
+
+.mywork-showmore img {
+    filter: brightness(0.5);
+    transition: filter 0.3s;
 }
 
 .mywork-showmore:hover {
-    gap: 30px;
-    transition: 0.6s;
+    border-color: #c4a35a;
+    color: #c4a35a;
+    gap: 26px;
+}
+
+.mywork-showmore:hover img {
+    filter: brightness(1) sepia(1) saturate(3) hue-rotate(5deg);
 }
 
 @media(max-width: 768px) {
     .mywork {
+        padding: 70px 40px;
         gap: 50px;
-        margin: 50px 70px;
-        align-items: start;
     }
 
     .mywork-title h1 {
-        padding: 0;
-        font-size: 50px;
-        font-weight: 600;
-    }
-
-    .mywork-title img {
-        width: 130px;
-        margin-right: -20px;
-
+        font-size: 44px;
     }
 
     .mywork-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
     }
 
-    .mywork-container img {
-        width: 100%;
-        height: 100%;
+    .mywork-mat img {
+        height: 140px;
+    }
+
+    .mywork-mat {
+        padding: 8px;
+    }
+
+    .mywork-label-title {
+        font-size: 14px;
     }
 
     .mywork-showmore {
-        padding: 20px 40px;
-        font-size: 18px;
-        margin: 50px auto;
-        cursor: pointer;
+        padding: 14px 40px;
+        font-size: 11px;
+        margin: 0 auto;
     }
 }

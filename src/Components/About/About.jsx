@@ -17,8 +17,9 @@ const About = () => {
                 </div>
                 <div className='about-right'>
                     <div className='about-p'>
-                        <p>I am a first-generation student pursuing a degree in Digital Media - Web Design track.</p>
-                        <p>I currently have two years of experience working with HTML and CSS, JavaScript, and Python.</p>
+                        <p>I am a first-generation student with a degree in Digital Media - Web and Interactive Media. I am currently looking to pursue a career in marketing focusing on social media. I have five years of customer service experience from being a server to being a retail store manager. Additionally, I have experience working with students as a Substitute teacher.</p>
+                        <p>I am proficcient with Adobe Photoshop and Illustrator, working with the programs since high school, I gained two certifications for the programs. I have also worked with Hootsuite and gained a certification.</p>
+                        <p>I have experience with designing and creating websites from scratch using VSCode. As well as </p>
                     </div>
                     {/*<div className='about-skills'>
                         <div className='about-skill'>

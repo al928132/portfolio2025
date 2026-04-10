@@ -2,7 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    padding: 22px 170px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #0d0c0a;
+    border-bottom: 1px solid #2a2720;
 }
 
 .nav-menu {
@@ -10,20 +17,27 @@
     align-items: center;
     list-style: none;
     gap: 60px;
-    font-size: 20px;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 }
 
 .nav-connect {
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #40F2F2 0.36%, #5F008F 102.06%);
-    font-size: 22px;
+    padding: 12px 32px;
+    border: 1px solid #c4a35a;
+    color: #c4a35a;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
+    font-family: 'Roboto Mono', monospace;
+    background: transparent;
 }
 
 .nav-connect:hover {
-    transform: scale(1.05);
+    background: #c4a35a;
+    color: #0d0c0a;
 }
 
 .nav-menu li {
@@ -36,11 +50,17 @@
 .nav-menu li img {
     display: flex;
     margin: auto;
+    filter: brightness(0.6);
 }
 
 .anchor-link {
     text-decoration: none;
-    color: white;
+    color: #b8b3a8;
+    transition: color 0.2s;
+}
+
+.anchor-link:hover {
+    color: #c4a35a;
 }
 
 .nav-mob-close {
@@ -53,7 +73,7 @@
 
 @media(max-width:768px) {
     .navbar {
-        margin: 20px 50px;
+        padding: 22px 40px;
     }
 
     .nav-connect {
@@ -64,6 +84,7 @@
         display: block;
         position: fixed;
         right: 30px;
+        filter: brightness(0.7);
     }
 
     .nav-mob-close {
@@ -72,6 +93,7 @@
         top: 30px;
         left: 290px;
         width: 30px;
+        filter: brightness(0.7);
     }
 
     .nav-menu {
@@ -80,7 +102,8 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        background-color: #1f0016;
+        background-color: #0d0c0a;
+        border-left: 1px solid #2a2720;
         width: 350px;
         height: 100%;
         z-index: 2;
@@ -89,7 +112,7 @@
     }
 
     .nav-menu li {
-        font-size: 30px;
+        font-size: 13px;
         padding-left: 100px;
         flex-direction: row;
         gap: 20px;

@@ -2,97 +2,111 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 35px;
-}
-
-.hero img {
-    margin: 150px;
-    border-radius: 100%;
-    width: 350px;
-    height: auto;
+    gap: 28px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #2a2720;
 }
 
 .hero h1 {
     text-align: center;
     width: 70%;
-    font-size: 50px;
-    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.2;
+    min-height: 1.4em;
 }
 
-.hero h1 span {
-    background: linear-gradient(270deg, #40F2F2 10%, #5F008F 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero-gradient {
+    color: #c4a35a;
+    font-style: italic;
+}
+
+.hero-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 0.75em;
+    background: #c4a35a;
+    margin-left: 3px;
+    vertical-align: middle;
+    animation: blink 0.6s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .hero p {
-    width: 50%;
-    text-align: center;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 11px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #7a7670;
+    margin-top: 8px;
 }
 
 .hero-action {
     display: flex;
     align-items: center;
-    gap: 25px;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 50px;
+    gap: 20px;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 20px;
 }
 
 .hero-connect {
-    padding: 25px 45px;
-    border-radius: 50px;
-    background: linear-gradient(264deg, #40F2F2 -5.09%, #5F008F 106.28%);
+    padding: 16px 44px;
+    background: #c4a35a;
+    color: #0d0c0a;
     cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .hero-resume {
-    padding: 25px 75px;
-    border-radius: 50px;
-    border: 2px solid #fff;
+    padding: 16px 44px;
+    border: 1px solid #2a2720;
+    color: #b8b3a8;
     cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .hero-connect:hover {
-    background: linear-gradient(264deg, #5F008F -5.09%, #40F2F2 106.28%);
+    background: #a8893f;
 }
 
 .hero-resume:hover {
-    border-color: #5f0081;
-    color: #5f0081;
+    border-color: #c4a35a;
+    color: #c4a35a;
 }
 
 @media(max-width:768px) {
-    .hero img {
-        margin-top: 120px;
-        width: 260px;
+    .hero {
+        padding-top: 160px;
+        padding-bottom: 70px;
     }
 
     .hero h1 {
-        margin-top: 50px;
         width: 90%;
-        font-size: 50px;
+        font-size: 38px;
     }
 
     .hero p {
-        width: 60%;
-        font-size: 18px;
-        line-height: 32px;
-        margin: 10px 0px;
+        font-size: 10px;
     }
 
     .hero-action {
-        gap: 16px;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 50px;
+        gap: 14px;
+        font-size: 11px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 20px;
     }
 
-    .hero-connect {
-        padding: 20px 50px;
-        border-radius: 40px;
+    .hero-connect, .hero-resume {
+        padding: 14px 30px;
     }
 }
