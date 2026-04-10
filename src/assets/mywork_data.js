@@ -6,7 +6,6 @@ import cover_code from '../assets/projects/cover.py?raw'
 import project6_img from '../assets/project_6.svg'
 
 // ── Python source files (imported as raw text via Vite's ?raw suffix) ────────
-import magic8ball_code from '../assets/projects/magic8ball.py?raw'
 // TO ADD MORE PYTHON FILES:
 //   1. Copy your .py file into:  src/assets/projects/
 //   2. Add an import line here:  import myScript_code from '../assets/projects/myScript.py?raw'
