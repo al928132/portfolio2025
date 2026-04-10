@@ -2,6 +2,7 @@ import project1_img from '../assets/project1_img.png'
 import project3_img from '../assets/project_3.svg'
 import project4_img from '../assets/project_4.svg'
 import cover_img from '../assets/projectImg/cover.png'
+import cover_code from '../assets/projects/cover.py?raw'
 import project6_img from '../assets/project_6.svg'
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -67,6 +68,7 @@ const mywork_data = [
         w_desc: "A Python-based tool that uses the turtle function to draw a custom game cover design, demonstrating creativity and programming skills.",
         w_tech: ["Python"],
         w_link: "#",
+        w_code: cover_code,
         w_section: "Python Projects"
     },
     {
