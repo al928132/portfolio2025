@@ -4,6 +4,10 @@ import project4_img from '../assets/project_4.svg'
 import cover_img from '../assets/projectImg/cover.png'
 import cover_code from '../assets/projects/cover.py?raw'
 import project6_img from '../assets/project_6.svg'
+import logob_img from '../assets/projectImg/logob.png'
+import logob_code from '../assets/projects/logob.py?raw'
+import inventory_img from '../assets/projectImg/inventory.png'
+import inventory_code from '../assets/projects/inventory.py?raw'
 
 // ── Python source files (imported as raw text via Vite's ?raw suffix) ────────
 // TO ADD MORE PYTHON FILES:
@@ -97,6 +101,26 @@ const mywork_data = [
         w_tech: ["Figma", "HTML5", "CSS3"],
         w_link: "#",
         w_section: "UI / UX Design"
+    },
+    {
+        w_no: 7,
+     w_name: "Logo Design",
+     w_img: logob_img,
+     w_desc: "A modern and minimalist logo design created for a fictional brand, demonstrating proficiency in Adobe Illustrator and branding principles.",
+    w_tech: ["Python"],
+      w_link: "#",
+      w_code: logob_code,
+      w_section: "Python Projects"
+    },
+    {
+        w_no: 8,
+        w_name: "Inventory Counter",
+        w_img: inventory_img,
+        w_desc: "A Python-based tool that allows for counting inventory items with a simple command-line interface, demonstrating practical programming skills and problem-solving.",
+        w_tech: ["Python"],
+        w_link: "#",
+        w_code: inventory_code,
+        w_section: "Python Projects"
     },
 ]
 
