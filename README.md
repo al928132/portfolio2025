@@ -1,12 +1,84 @@
-# React + Vite
+# Portfolio 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio built with React + Vite and deployed to GitHub Pages.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Adding a project to the Portfolio tab
 
-## Expanding the ESLint configuration
+All portfolio projects live in one file:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/assets/mywork_data.js
+```
+
+### Step 1 – Add your image
+
+Place your project screenshot or preview image inside `src/assets/`.  
+Supported formats: `.png`, `.jpg`, `.jpeg`, `.svg`, `.webp`.
+
+> **Tip:** keep images reasonably sized (ideally ≤ 500 KB) so the page loads fast.
+
+### Step 2 – Import the image
+
+Open `src/assets/mywork_data.js` and add an import at the top of the file:
+
+```js
+import myNewImg from '../assets/my_project_screenshot.png'
+```
+
+### Step 3 – Add a project object
+
+Append a new entry to the `mywork_data` array:
+
+```js
+{
+    w_no: 7,                          // unique integer — increment from the last entry
+    w_name: "My New Project",         // name shown on the card and in the modal
+    w_img: myNewImg,                  // the imported image variable (omit if no image yet)
+    w_desc: "A short description…",   // shown inside the project modal
+    w_tech: ["React", "CSS3"],        // technology tags displayed in the modal
+    w_link: "https://example.com",    // live URL; use "#" if not yet deployed
+    w_section: "Web Development",     // section heading in the portfolio grid
+                                      // use an existing name to group with similar
+                                      // projects, or a new name to create a new section
+},
+```
+
+### Available sections (current)
+
+| Section label | What belongs here |
+|---|---|
+| `Web Development` | Websites, web apps, landing pages |
+| `UI / UX Design` | Figma mockups, design systems |
+| `Tools & Scripts` | Python scripts, automation, data tools |
+
+Add any new section label you like — it will appear automatically as a new group in the portfolio.
+
+### Step 4 – Save and deploy
+
+```bash
+npm run build          # build for production
+npm run preview        # preview locally
+git push               # GitHub Actions will redeploy to GitHub Pages automatically
+```
+
+---
+
+## Development
+
+```bash
+npm install      # install dependencies
+npm run dev      # start local dev server
+npm run build    # production build
+```
+
+---
+
+## Tech stack
+
+- [React](https://react.dev/) + [Vite](https://vite.dev/)
+- [React Router](https://reactrouter.com/) (hash-based routing for GitHub Pages)
+- Google Fonts – Roboto Mono + Playfair Display
+- GitHub Pages via Vite `base` config
+
