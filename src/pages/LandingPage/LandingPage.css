@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #161513;
+    background: #0d0c0a;
     overflow: hidden;
     position: relative;
 }
@@ -13,8 +13,8 @@
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse 60% 50% at 20% 30%, rgba(95, 0, 143, 0.25) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 40% at 80% 70%, rgba(64, 242, 242, 0.15) 0%, transparent 55%);
+        radial-gradient(ellipse 60% 50% at 20% 30%, rgba(196, 163, 90, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 70%, rgba(196, 163, 90, 0.05) 0%, transparent 55%);
     pointer-events: none;
 }
 
@@ -32,29 +32,29 @@
 }
 
 .landing-greeting {
-    font-size: 18px;
-    letter-spacing: 4px;
+    font-size: 11px;
+    letter-spacing: 0.35em;
     text-transform: uppercase;
-    color: #40F2F2;
-    font-weight: 500;
+    color: #c4a35a;
+    font-weight: 400;
 }
 
 .landing-name {
-    font-size: 60px;
-    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 400;
+    font-style: italic;
     line-height: 1.1;
     min-height: 1.3em;
-    background: linear-gradient(270deg, #40F2F2 10%, #5F008F 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #e5e0d5;
 }
 
 .landing-cursor {
     display: inline-block;
-    -webkit-text-fill-color: #40F2F2;
+    color: #c4a35a;
     margin-left: 2px;
     font-weight: 300;
+    font-style: normal;
     animation: none;
 }
 
@@ -68,9 +68,10 @@
 }
 
 .landing-role {
-    font-size: 22px;
-    color: #d8d8d8;
-    letter-spacing: 1px;
+    font-size: 12px;
+    color: #8a8478;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
 }
 
 .landing-nav {
@@ -87,51 +88,49 @@
     align-items: center;
     gap: 10px;
     padding: 36px 44px;
-    border-radius: 16px;
-    border: 1px solid rgba(64, 242, 242, 0.25);
-    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #2a2720;
+    background: transparent;
     text-decoration: none;
-    color: white;
+    color: #b8b3a8;
     cursor: pointer;
-    transition: transform 0.3s, border-color 0.3s, background 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, border-color 0.3s, background 0.3s;
     min-width: 180px;
-    backdrop-filter: blur(6px);
 }
 
 .landing-nav-card:hover {
-    transform: translateY(-6px);
-    border-color: #40F2F2;
-    background: rgba(64, 242, 242, 0.08);
-    box-shadow: 0 8px 30px rgba(64, 242, 242, 0.2);
+    transform: translateY(-4px);
+    border-color: #c4a35a;
+    background: rgba(196, 163, 90, 0.04);
 }
 
 .landing-nav-icon {
-    font-size: 34px;
+    font-size: 28px;
     line-height: 1;
+    color: #c4a35a;
 }
 
 .landing-nav-label {
-    font-size: 20px;
-    font-weight: 600;
-    background: linear-gradient(270deg, #40F2F2 10%, #a060d0 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #e5e0d5;
 }
 
 .landing-nav-desc {
-    font-size: 14px;
-    color: #a0a0a0;
+    font-size: 12px;
+    color: #7a7670;
     text-align: center;
+    letter-spacing: 0.05em;
 }
 
 @media (max-width: 768px) {
     .landing-name {
-        font-size: 36px;
+        font-size: 40px;
     }
 
     .landing-role {
-        font-size: 18px;
+        font-size: 11px;
     }
 
     .landing-nav {
