@@ -28,13 +28,8 @@ const Contact = () => {
             body: JSON.stringify(Object.fromEntries(formData))
         }).then((res) => res.json());
 
-        setLoading(false);
-
-        if (response.success) {
-            setResult({ success: true, message: "Message sent! I'll get back to you soon." });
-            event.target.reset();
-        } else {
-            setResult({ success: false, message: response.message || "Something went wrong. Please try again." });
+        if (res.success) {
+            alert(res.message)
         }
     };
 
