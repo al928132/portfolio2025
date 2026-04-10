@@ -1,7 +1,7 @@
 import project1_img from '../assets/project1_img.png'
 import project3_img from '../assets/project_3.svg'
 import project4_img from '../assets/project_4.svg'
-import magic8ball from '../assets/projectImg/magic8ball.png'
+import magic8ball_img from '../assets/projectImg/magic8ball.png'
 import project6_img from '../assets/project_6.svg'
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -63,7 +63,7 @@ const mywork_data = [
     {
         w_no: 5,
         w_name: "Magic 8 Ball",
-        w_img: magic8ball.png,
+        w_img: magic8ball_img,
         w_desc: "A Python-based tool that provides random responses to yes/no questions similar to that of a Magic 8 BallS.",
         w_tech: ["Python"],
         w_link: "#",
