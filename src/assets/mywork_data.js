@@ -8,6 +8,13 @@ import logob_img from '../assets/projectImg/logob.png'
 import logob_code from '../assets/projects/logob.py?raw'
 import inventory_img from '../assets/projectImg/inventory.png'
 import inventory_code from '../assets/projects/inventory.py?raw'
+import op_art_img from '../assets/projectImg/op_art.jpeg'
+import pattern_art_img from '../assets/projectImg/pattern.jpeg'
+import cut_out_img from '../assets/projectImg/cutOut.jpeg'
+import line_drawing_pdf from '../assets/projectImg/lineDrawing.jpeg'
+import windfall from '../assets/projects/windfall paper.pdf'
+import windfallDesign from '../assets/projects/Final Project.pdf'
+import windfall_home from '../assets/projectImg/Homepage.png'
 
 // ── Python source files (imported as raw text via Vite's ?raw suffix) ────────
 // TO ADD MORE PYTHON FILES:
@@ -122,6 +129,63 @@ const mywork_data = [
         w_code: inventory_code,
         w_section: "Python Projects"
     },
+    {
+        w_no: 9,
+        w_name: "Op Art",
+        w_img: op_art_img,
+        w_desc: "A vibrant op art piece created with pencil and watercolor, showcasing dynamic patterns and optical effects.",
+        w_tech: ["Pencil", "Watercolor"],
+        w_link: "#",
+        w_section: "Design Projects"
+    },
+    {
+        w_no: 10,
+        w_name: "Pattern",
+        w_img: pattern_art_img,
+        w_desc: "A bold pattern design created with pencil and watercolor, featuring intricate shapes and vibrant colors.",
+        w_tech: ["Pencil", "Watercolor"],
+        w_link: "#",
+        w_section: "Design Projects"
+    },
+    {
+        w_no: 11,
+        w_name: "Cut Out Piece",
+        w_img: cut_out_img,
+        w_desc: "A creative cut-out art piece made from slicing through paper, demonstrating artistic expression and craftsmanship.",
+        w_tech: ["Exacto Knife", "Paper"],
+        w_link: "#",
+        w_section: "Design Projects"
+    },
+    {
+        w_no: 12,
+        w_name: "Line Drawing",
+        w_img: line_drawing_pdf,
+        w_desc: "An intricate line drawing created with various pens, showcasing different techniques and styles.",
+        w_tech: ["Pencil", "Pen"],
+        w_link: "#",
+        w_section: "Design Projects"
+    },
+    {
+        w_no: 13,
+        w_name: "Windfall App Report",
+        w_img: windfall_home,
+        w_desc: "A detailed report on a recent project, showcasing research and analysis.",
+        w_tech: ["Word"],
+        w_link: "#",
+        w_section: "Reports",
+        w_pdf: windfall,
+        w_pdf_label: "View PDF"
+    },
+    {
+        w_no: 14,
+        w_name: "Windfall App Design",
+        w_img: windfall_home,
+        w_desc: "A a prototype of an app, showcasing research, analysis, and design.",
+        w_tech: ["Figma"],
+        w_link: "#",
+        w_section: "Design Projects",
+        w_pdf: windfallDesign,
+        w_pdf_label: "View PDF"
+    },
 ]
-
 export default mywork_data;

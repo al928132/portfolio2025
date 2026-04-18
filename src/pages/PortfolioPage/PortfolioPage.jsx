@@ -117,6 +117,17 @@ const ProjectModal = ({ project, onClose }) => {
                             </a>
                         )}
 
+                        {project.w_pdf && (
+                            <a
+                                href={project.w_pdf}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="modal-link"
+                            >
+                                {project.w_pdf_label || "View PDF"} &rarr;
+                            </a>
+                        )}
+
                         {project.w_code && (
                             <PythonRunner code={project.w_code} />
                         )}
