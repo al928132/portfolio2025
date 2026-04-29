@@ -1,0 +1,86 @@
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+body {
+    background-image: url("../images/road_and_mountain.jpg");
+    background-color: coral;
+    align-content: center;
+}
+
+#menu {
+    width: 200px;
+    height: 323px;
+    border: solid black 2px;
+    border-bottom: solid 1px;
+    font-family: Verdana thin;
+    font-size: 1.8em;
+    align-content: center;
+    margin-left: 12em;
+    background-color: white;
+}
+
+#hot {
+    border-bottom: solid 2px black;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: black;
+    color: white;
+    position: relative;
+    top: -30px;
+}
+
+li {
+    border-bottom: solid 2px;
+    position: relative;
+    top: -45px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 2px;
+}
+
+#cars2 {
+    border: solid black 2px;
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+    width: 600px;
+    height: 323px;
+    margin-left: 201px;
+    position: relative;
+    top: -362px;
+}
+
+#lifestyle {
+    border: solid black 2px;
+    border-top: solid 1px;
+    align-content: center;
+    width: 800px;
+    height: 350px;
+    padding-left: 8px;
+    background-color: white;
+    margin-left: 21.55em;
+    font-size: default;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.difRods {
+    width: 150px;
+    height: 139px;
+    float: left;
+    margin: 10px;
+    border: solid green 1px;
+}

@@ -1,9 +1,9 @@
-import project1_img from '../assets/project1_img.png'
-import project3_img from '../assets/project_3.svg'
+import project1_img from '../assets/projectImg/portfolio.png'
+import project3_img from '../assets/projectImg/barbers.png'
 import project4_img from '../assets/project_4.svg'
 import cover_img from '../assets/projectImg/cover.png'
 import cover_code from '../assets/projects/cover.py?raw'
-import project6_img from '../assets/project_6.svg'
+//import project6_img from '../assets/project_6.svg'
 import logob_img from '../assets/projectImg/logob.png'
 import logob_code from '../assets/projects/logob.py?raw'
 import inventory_img from '../assets/projectImg/inventory.png'
@@ -15,6 +15,9 @@ import line_drawing_pdf from '../assets/projectImg/lineDrawing.jpeg'
 import windfall from '../assets/projects/windfall paper.pdf'
 import windfallDesign from '../assets/projects/Final Project.pdf'
 import windfall_home from '../assets/projectImg/Homepage.png'
+import rewire_report from '../assets/projects/Rewire Final Report.pdf'
+import rewire_img from '../assets/projectImg/rewireLogo.png'
+import travel_img from '../assets/projectImg/travelWish.png'
 
 // ── Python source files (imported as raw text via Vite's ?raw suffix) ────────
 // TO ADD MORE PYTHON FILES:
@@ -60,33 +63,34 @@ const mywork_data = [
         w_name: "Portfolio Website",
         w_img: project1_img,
         w_desc: "A personal portfolio website built with React and Vite, showcasing my projects and skills. Features a gallery wall layout, typing animation, and responsive design.",
-        w_tech: ["React", "Vite", "CSS3", "JavaScript"],
-        w_link: "https://al928132.github.io/portfolio2025",
+        w_tech: ["React", "Vite", "CSS", "JavaScript","AI"],
+        w_link: "https://al928132.github.io/portfolio2025/",
         w_section: "Web Development"
     },
     {
         w_no: 2,
-        w_name: "UI Design System",
-        w_desc: "A comprehensive design system with reusable components, consistent color palettes, and typography guidelines built for modern web applications.",
-        w_tech: ["Figma", "CSS3", "HTML5"],
-        w_link: "#",
-        w_section: "UI / UX Design"
+        w_name: "Travel Wishlist",
+        w_img: travel_img,
+        w_desc: "A simple travel wishlist app built with JavaScript, allowing users to add and manage their dream destinations.",
+        w_tech: ["JavaScript", "CSS", "HTML5","AI"],
+        w_link: "https://al928132.github.io/midtermproject/",
+        w_section: "Web Development"
     },
     {
         w_no: 3,
-        w_name: "Responsive Landing Page",
+        w_name: "Barber's Website",
         w_img: project3_img,
-        w_desc: "A fully responsive landing page for a creative agency, featuring smooth scroll animations and a mobile-first approach.",
-        w_tech: ["HTML5", "CSS3", "JavaScript"],
-        w_link: "#",
+        w_desc: "A fully responsive website for a local barber shop, featuring service listings, appointment booking form, and contact information.",
+        w_tech: ["HTML5", "CSS", "JavaScript", "AI"],
+        w_link: "https://al928132.github.io/static-site-2/",
         w_section: "Web Development"
     },
     {
         w_no: 4,
-        w_name: "JavaScript Web App",
+        w_name: "AduLessons",
         w_img: project4_img,
-        w_desc: "An interactive web application built with vanilla JavaScript featuring dynamic data rendering, local storage, and a clean UX.",
-        w_tech: ["JavaScript", "HTML5", "CSS3"],
+        w_desc: "A website for a fictional online learning platform, that teaches young adults how to do basic life skills. The site includes a homepage, course listings, and an about page.",
+        w_tech: ["JavaScript", "HTML5", "CSS", "AI"],
         w_link: "#",
         w_section: "Web Development"
     },
@@ -100,15 +104,15 @@ const mywork_data = [
         w_code: cover_code,
         w_section: "Python Projects"
     },
-    {
-        w_no: 6,
-        w_name: "E-commerce Mockup",
-        w_img: project6_img,
-        w_desc: "A high-fidelity e-commerce mockup designed in Figma and implemented in HTML/CSS, showcasing product cards, cart UI, and checkout flow.",
-        w_tech: ["Figma", "HTML5", "CSS3"],
-        w_link: "#",
-        w_section: "UI / UX Design"
-    },
+    //{
+        //w_no: 6,
+        //w_name: "E-commerce Mockup",
+        //w_img: project6_img,
+        //w_desc: "A high-fidelity e-commerce mockup designed in Figma and implemented in HTML/CSS, showcasing product cards, cart UI, and checkout flow.",
+        //w_tech: ["Figma", "HTML5", "CSS"],
+        //w_link: "#",
+        //w_section: "UI / UX Design"
+   // },
     {
         w_no: 7,
      w_name: "Logo Design",
@@ -187,5 +191,17 @@ const mywork_data = [
         w_pdf: windfallDesign,
         w_pdf_label: "View PDF"
     },
+    {
+        w_no: 15,
+        w_name: "Rewire App Report",
+        w_img: rewire_img,
+        w_desc: "A report of the research that I did with a team, including UI/UX research and design research.",
+        w_tech: ["Figma", "Google Docs"],
+        w_link: "#",
+        w_section: "Reports",
+        w_pdf: rewire_report,
+        w_pdf_label: "View PDF"
+    },
+
 ]
 export default mywork_data;
