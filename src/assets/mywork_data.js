@@ -1,6 +1,6 @@
 import project1_img from '../assets/projectImg/portfolio.png'
 import project3_img from '../assets/projectImg/barbers.png'
-import project4_img from '../assets/project_4.svg'
+import project4_img from '../assets/projectImg/Home Page Landing.png'
 import cover_img from '../assets/projectImg/cover.png'
 import cover_code from '../assets/projects/cover.py?raw'
 //import project6_img from '../assets/project_6.svg'
